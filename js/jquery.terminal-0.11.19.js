@@ -235,8 +235,8 @@
     };
 
     var hasLS = function () {
-      var testKey = 'test', storage = window.localStorage;
       try {
+        var testKey = 'test', storage = window.localStorage;
         storage.setItem(testKey, '1');
         storage.removeItem(testKey);
         return true;
